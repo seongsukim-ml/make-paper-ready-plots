@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper-Ready Python Plots"
+  short_description: "Create clean publication-ready Matplotlib figures"
+  default_prompt: "Use $make-paper-ready-plots to turn these results into a clean publication-ready Matplotlib figure with PDF and PNG outputs."

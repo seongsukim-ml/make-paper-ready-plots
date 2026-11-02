@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.mplconfig/
+.DS_Store
+# Bring your own licensed fonts; never commit font binaries.
+*.ttf
+*.otf
+*.woff
+*.woff2
