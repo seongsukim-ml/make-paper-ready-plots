@@ -8,8 +8,8 @@ do not represent a new benchmark run or a current-model performance claim.
 Source snapshot: [`67af4bfe4994`](https://github.com/seongsukim-ml/QHFlow2/tree/67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5).
 PNG bytes were decoded from stored notebook outputs without executing cells,
 changing values, relabeling methods, or resizing images. Small PNGs retain the
-original inline-preview resolution; no vector version is implied. The SCF
-panels retain their original DejaVu Sans typography.
+original inline-preview resolution; no vector version is implied. The gallery
+contains six parameter- and data-scaling figures.
 
 | Figure | Original notebook | Cell / output (zero-based) |
 |---|---|---|
@@ -19,8 +19,6 @@ panels retain their original DejaVu Sans typography.
 | [MD17 training size vs energy MAE](md17-energy.png) | [Source](https://github.com/seongsukim-ml/QHFlow2/blob/67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5/_asset/md17_datascaling/data_scaling_v2.ipynb) | 2 / 2 |
 | [MD17 training size vs Hamiltonian MAE](md17-hamiltonian.png) | [Source](https://github.com/seongsukim-ml/QHFlow2/blob/67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5/_asset/md17_datascaling/data_scaling_v2.ipynb) | 2 / 4 |
 | [MD17 training size vs orbital energy MAE](md17-orbital-energy.png) | [Source](https://github.com/seongsukim-ml/QHFlow2/blob/67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5/_asset/md17_datascaling/data_scaling_v2.ipynb) | 2 / 6 |
-| [SCF iteration and timing ratios](scf-timing.png) | [Source](https://github.com/seongsukim-ml/QHFlow2/blob/67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5/_asset/scf_acceleration/scf_acceleration.ipynb) | 0 / 0 |
-| [SCF timing ratios with inference-time insets](scf-timing-inset.png) | [Source](https://github.com/seongsukim-ml/QHFlow2/blob/67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5/_asset/scf_acceleration/scf_acceleration.ipynb) | 1 / 0 |
 
 ## Additional Hamiltonian and orbital-energy scaling views
 

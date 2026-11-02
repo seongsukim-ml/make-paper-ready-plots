@@ -1,186 +1,177 @@
 # Make Paper-Ready Plots
 
-A reusable AI-agent skill for clean, reproducible **Matplotlib figures for
-scientific papers**. Includes style guides, runnable templates, PDF/PNG export,
-and a small output validator.
+A reusable agent skill for clean, reproducible **Matplotlib figures for scientific papers**.
+Style guides, runnable templates, and PDF/PNG exports—with examples from real research.
 
-**논문용 그래프 제작 스킬입니다.** 실험 결과 비교, parameter scaling, ablation,
-작은 패널 여러 개를 일관된 스타일로 만들 수 있습니다. QHFlow2 원본 그림과
-별도로 재생성 가능한 합성 데이터 예시를 제공합니다. **DIN 2014 폰트를 권장하며 합성 데이터 샘플도 DIN 2014로
-제작했습니다.** 폰트 파일 자체는 포함하지 않습니다.
+**DIN 2014 is recommended.** Supply your own licensed fonts; DejaVu Sans is the fallback.
 
-## QHFlow2 figure gallery
+논문용 그래프 제작 스킬입니다. 실제 연구 그림과 재생성 가능한 DIN 샘플을 함께 제공합니다.
 
-Selected original figures from [QHFlow2](https://github.com/seongsukim-ml/QHFlow2),
-including model-size comparisons, MD17 data scaling, and SCF timing panels.
-These are **archived research figures**, separate from the synthetic examples
-below. Values, labels, and original typography are preserved; the SCF panels
-use their original DejaVu Sans styling.
+[Research gallery](#research-gallery) · [Templates](#reproducible-templates) · [Use the skill](#use-the-skill) · [Sources & rights](#sources--rights)
 
-### Model size and prediction error
+## Research gallery
 
-<img src="examples/qhflow2/parameter-hamiltonian.png" alt="QHFlow2 parameter count versus Hamiltonian MAE" width="232"> <img src="examples/qhflow2/parameter-orbital-energy.png" alt="QHFlow2 parameter count versus orbital energy MAE" width="232">
+Original research figures retain their values, labels, and typography.
+Click a manuscript preview to open its full PDF.
 
-### MD17 training-data scaling
+### Density matrix learning
 
-![QHFlow2 force MAE against training size](examples/qhflow2/md17-force.png)
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<a href="examples/density-matrix/occupation-spectrum.pdf"><img src="examples/density-matrix/occupation-spectrum.png" alt="Occupation correction and spectral deviations" height="280"></a><br>
+<b>Occupation correction</b><br>Broken axes · spectral diagnostics
+</td>
+<td width="50%" align="center" valign="top">
+<a href="examples/density-matrix/subspace-ablation.pdf"><img src="examples/density-matrix/subspace-ablation.png" alt="Density and energy errors in an OV-weight sweep" height="280"></a><br>
+<b>Subspace ablation</b><br>Two metrics · compact legend
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<a href="examples/density-matrix/inversion-sensitivity.pdf"><img src="examples/density-matrix/inversion-sensitivity.png" alt="Signed density errors at original and inverted molecular geometries" height="280"></a><br>
+<b>Inversion sensitivity</b><br>Matched molecular views · signed errors
+</td>
+<td width="50%" align="center" valign="top">
+<a href="examples/density-matrix/density-errors.pdf"><img src="examples/density-matrix/density-errors.png" alt="QM40 electron densities and signed error comparisons" height="280"></a><br>
+<b>Density comparison</b><br>Multiple molecules · aligned method columns
+</td>
+</tr>
+</table>
 
-![QHFlow2 energy MAE against training size](examples/qhflow2/md17-energy.png)
+[All four figures & provenance](examples/density-matrix/README.md).
+The source manuscript is private; these selected figure files are available here.
+Molecular panels illustrate composition; molecular rendering is outside this plotting skill's scope.
 
-### SCF acceleration
+### QHFlow2
 
-![QHFlow2 SCF iteration and timing ratios](examples/qhflow2/scf-timing.png)
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<img src="examples/qhflow2/parameter-hamiltonian.png" alt="QHFlow2 model size versus Hamiltonian MAE" width="232"><br>
+<b>Model size → Hamiltonian error</b>
+</td>
+<td width="50%" align="center" valign="top">
+<img src="examples/qhflow2/parameter-orbital-energy.png" alt="QHFlow2 model size versus orbital energy MAE" width="232"><br>
+<b>Model size → orbital-energy error</b>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center" valign="top">
+<img src="examples/qhflow2/md17-force.png" alt="MD17 force errors across training-set sizes" width="400"><br>
+<b>Data scaling · forces</b>
+</td>
+<td width="50%" align="center" valign="top">
+<img src="examples/qhflow2/md17-energy.png" alt="MD17 energy errors across training-set sizes" width="400"><br>
+<b>Data scaling · energies</b>
+</td>
+</tr>
+</table>
 
-![QHFlow2 SCF timing ratios with inference-time insets](examples/qhflow2/scf-timing-inset.png)
+[All six figures & source notebooks](examples/qhflow2/README.md).
+These are unchanged notebook outputs, including small inline previews.
 
-[All 8 figures, original notebooks, and provenance](examples/qhflow2/README.md).
-The PNGs are extracted exactly from stored notebook outputs; some are small
-inline previews, not print-resolution exports. They are not regenerated by
-`generate_gallery.py`. Use the linked source notebooks for full-resolution
-exports and the original experimental context.
+## Reproducible templates
 
-## Synthetic example gallery
+**Synthetic data · DIN 2014 · Python + PDF + PNG.**
+These examples demonstrate styling, not measured research results.
 
-Every example in this section uses **synthetic demonstration data**, not experimental
-results. Public previews use **DIN 2014 (recommended)**, supplied locally.
-Without a font path, the scripts use DejaVu Sans. The scripts reproduce the data,
-layout, and styling; binary output can vary with dependency versions.
+<a href="examples/gallery/small-multiples.pdf"><img src="examples/gallery/small-multiples.png" alt="Three aligned synthetic scaling panels" width="960"></a>
 
-### Small multiples
+**Small multiples** — shared scales, explicit ticks, and consistent panel legends.
+[Template](assets/matplotlib-small-multiples.py) · [PDF](examples/gallery/small-multiples.pdf)
 
-Aligned log–log comparisons, explicit numeric ticks, quiet horizontal grids,
-and consistent per-panel legends.
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+<a href="examples/gallery/compact-boxed.pdf"><img src="examples/gallery/compact-boxed.png" alt="Compact boxed synthetic comparison" width="280"></a><br>
+<b>Compact boxed</b><br>Thin axes · horizontal legend
+</td>
+<td width="33%" align="center" valign="top">
+<a href="examples/gallery/ablation.pdf"><img src="examples/gallery/ablation.png" alt="Synthetic architecture ablation" width="280"></a><br>
+<b>Ablation</b><br>Zero-based bars · direct labels
+</td>
+<td width="33%" align="center" valign="top">
+<a href="examples/gallery/scaling-fit.pdf"><img src="examples/gallery/scaling-fit.png" alt="Synthetic scaling fit excluding the final observation" width="280"></a><br>
+<b>Scaling fit</b><br>Explicit fit selection · open marker
+</td>
+</tr>
+</table>
 
-![Three-panel synthetic comparison](examples/gallery/small-multiples.png)
-
-[PDF](examples/gallery/small-multiples.pdf) · [Template](assets/matplotlib-small-multiples.py)
-
-### Compact boxed
-
-The recommended DIN 2014 typography with thin boxed axes, outward ticks, filled
-markers, and a compact horizontal legend. Supply your own licensed DIN font
-to match the gallery; DejaVu Sans is available as a fallback.
-
-<img src="examples/gallery/compact-boxed.png" alt="Compact boxed synthetic comparison using DIN 2014" width="440">
-
-[PDF](examples/gallery/compact-boxed.pdf) · [Template](assets/matplotlib-din-boxed.py)
-
-### Architecture ablation
-
-Zero-based bars with direct value labels and a hatch to distinguish the full
-model independently of color. Values are illustrative, with no claimed
-statistical uncertainty.
-
-<img src="examples/gallery/ablation.png" alt="Synthetic architecture ablation" width="600">
-
-[PDF](examples/gallery/ablation.pdf) · [Source](examples/generate_gallery.py)
-
-### Descriptive scaling fit
-
-An optional power-law fit on exactly four synthetic observations. The open
-marker is excluded from fitting. This example demonstrates presentation and
-fit selection, not evidence for a real scaling law.
-
-<img src="examples/gallery/scaling-fit.png" alt="Synthetic scaling fit with an excluded comparison point" width="600">
-
-[PDF](examples/gallery/scaling-fit.pdf) · [Source](examples/generate_gallery.py)
+[Compact template](assets/matplotlib-din-boxed.py) · [Gallery source](examples/generate_gallery.py)
 
 ## Use the skill
-
-Clone the repository and ask your coding agent to read
-[`SKILL.md`](SKILL.md). The instructions and supporting assets are self-contained.
 
 ```bash
 git clone https://github.com/seongsukim-ml/make-paper-ready-plots.git
 ```
 
-Example prompt:
+Ask your agent to read [`SKILL.md`](SKILL.md), then describe your data and figure:
 
 > Follow make-paper-ready-plots/SKILL.md. Plot the MAE results from results.csv
-> as three comparable panels with shared scales. Preserve the supplied values,
-> use the default style, and deliver the Python script, PDF, and PNG.
+> as three comparable panels with shared scales. Use my licensed DIN 2014 font,
+> preserve the supplied values, and deliver the Python script, PDF, and PNG.
 
-For a compact plot:
+For compact plots, request the **DIN Boxed** profile. Power-law fits are optional
+and only added when requested.
 
-> Follow make-paper-ready-plots/SKILL.md and references/din-boxed.md. Use the
-> compact boxed profile with my licensed DIN 2014 font. Keep the legend above the axes.
-> Export a PDF and a 600-dpi PNG and inspect the rendered output.
+<details>
+<summary>Install as a personal Codex skill</summary>
 
-For personal Codex skill discovery, clone directly into an unused skill folder:
+Clone into an unused skill folder:
 
 ```bash
 git clone https://github.com/seongsukim-ml/make-paper-ready-plots.git \
   "${CODEX_HOME:-$HOME/.codex}/skills/make-paper-ready-plots"
 ```
 
-If that directory already exists, use a separate checkout and compare it with
-your existing skill before replacing anything. Once your agent discovers the
-skill, refer to it as `$make-paper-ready-plots`.
+If that directory already exists, compare using a separate checkout first.
+Once discovered by your agent, invoke `$make-paper-ready-plots`.
 
-## Run the examples
+</details>
 
-Python 3.10 or later is required. No LaTeX installation or image-generation API
-is needed.
+## Run the templates
+
+Python 3.10+. No LaTeX installation or image-generation API is needed.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
-python examples/generate_gallery.py
-```
-
-The command above uses the DejaVu Sans fallback. To match the committed DIN
-2014 gallery, regenerate with your own licensed fonts:
-
-```bash
 python examples/generate_gallery.py \
   --font /path/to/DIN2014-Regular.ttf --bold-font /path/to/DIN2014-Bold.ttf
 ```
 
-The generator creates all four PNG/PDF pairs and validates their image dimensions,
-PDF signature, page count, and expected font name. The validator is a basic
-file check, not a substitute for inspecting layout at the intended paper size.
+Omit the font arguments to use DejaVu Sans. This regenerates the **four synthetic
+examples only** and checks PNG integrity, dimensions, PDF page count, and font
+names. Inspect layout at the intended paper size as well.
 
-Run a template separately:
+<details>
+<summary>Run individual templates and validate exports</summary>
 
 ```bash
 python assets/matplotlib-small-multiples.py --output-stem output/comparison
-python assets/matplotlib-din-boxed.py --output-stem output/compact
+python assets/matplotlib-din-boxed.py --output-stem output/compact \
+  --font /path/to/DIN2014-Regular.ttf --bold-font /path/to/DIN2014-Bold.ttf
 python scripts/validate_static_plot.py output/compact.png output/compact.pdf
 ```
 
-**Recommended font: DIN 2014.** It gives these compact plots the narrow, clean
-letterforms shown in the gallery. Font files are not bundled; provide your own
-licensed copies. For an individual figure:
+The validator performs basic file checks; it does not establish statistical
+correctness, accessibility, or publisher compliance.
 
-```bash
-python assets/matplotlib-din-boxed.py --output-stem output/compact-din \
-  --font /path/to/DIN2014-Regular.ttf --bold-font /path/to/DIN2014-Bold.ttf
-```
+</details>
 
-## Design choices
+## Sources & rights
 
-- Two profiles: a default small-multiples style and a compact DIN Boxed layout.
-- Thin boxed axes, restrained typography, and dotted horizontal grids.
-- Marker and line-style distinctions alongside color.
-- Real numeric coordinates and preserved input precision.
-- Optional power-law fitting only when requested; fitted points are explicit.
-- Editable source scripts plus vector PDF and raster PNG outputs.
-
-## Files
-
-| Path | Purpose |
+| Resource | Contents |
 |---|---|
-| [SKILL.md](SKILL.md) | Agent entry point and workflow |
-| [references/style-guide.md](references/style-guide.md) | Default plotting style |
-| [references/din-boxed.md](references/din-boxed.md) | Compact boxed profile and font handling |
-| [references/power-law.md](references/power-law.md) | Optional descriptive scaling fits |
-| `assets/` | Two standalone Matplotlib templates |
-| `examples/gallery/` | Synthetic DIN gallery, regenerated by `examples/generate_gallery.py` |
-| [examples/qhflow2/](examples/qhflow2/README.md) | Original QHFlow2 figures, source links, and checksums |
-| `scripts/validate_static_plot.py` | Basic PNG/PDF checks |
+| [SKILL.md](SKILL.md) | Agent workflow |
+| [Default style](references/style-guide.md) · [DIN Boxed](references/din-boxed.md) | Typography, axes, colors, and export conventions |
+| [Power-law guide](references/power-law.md) | Optional descriptive fits |
+| [Density matrix gallery](examples/density-matrix/README.md) | Four manuscript figures, original PDFs, and source hashes |
+| [QHFlow2 gallery](examples/qhflow2/README.md) | Six archived figures and extraction provenance |
 
-## License
-
-[MIT](LICENSE) for the original skill, code, and synthetic examples. See
-[third-party notices](THIRD_PARTY_NOTICES.md) for fonts and dependencies.
+The original skill, scripts, and synthetic examples use the [MIT license](LICENSE).
+Manuscript figures have [separate rights](examples/density-matrix/NOTICE.md).
+See [third-party notices](THIRD_PARTY_NOTICES.md) for attribution and fonts.
+DIN font files are not distributed.

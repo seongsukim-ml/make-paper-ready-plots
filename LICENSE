@@ -1,3 +1,8 @@
+Scope: This MIT license covers the original skill, scripts, and synthetic
+examples. Manuscript assets under examples/density-matrix/ are excluded;
+see examples/density-matrix/NOTICE.md. Other notices are listed in
+THIRD_PARTY_NOTICES.md.
+
 MIT License
 
 Copyright (c) 2026 seongsukim-ml

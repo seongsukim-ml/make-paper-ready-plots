@@ -63,26 +63,6 @@
       "output_index": 6,
       "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
       "output_sha256": "38e898f21fac40d01a1648fe424ae7c7a4174168f39b0b2b2b45916a6114d15a"
-    },
-    {
-      "file": "scf-timing.png",
-      "title": "SCF iteration and timing ratios",
-      "source_path": "_asset/scf_acceleration/scf_acceleration.ipynb",
-      "source_git_blob_sha": "82386c196ab62959edc1b3c2241ce12f3f2b3fcb",
-      "cell_index": 0,
-      "output_index": 0,
-      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
-      "output_sha256": "16accad28c602b5720df332ca434e0077da85bcfefccdc4ef3417f053741f877"
-    },
-    {
-      "file": "scf-timing-inset.png",
-      "title": "SCF timing ratios with inference-time insets",
-      "source_path": "_asset/scf_acceleration/scf_acceleration.ipynb",
-      "source_git_blob_sha": "82386c196ab62959edc1b3c2241ce12f3f2b3fcb",
-      "cell_index": 1,
-      "output_index": 0,
-      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
-      "output_sha256": "cf4982ce0e0a50ff260e5f1137da0f6c1817c2fd76bd971781d530c1053fdbc3"
     }
   ]
 }

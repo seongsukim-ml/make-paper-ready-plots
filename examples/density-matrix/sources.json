@@ -1,0 +1,60 @@
+{
+  "repository": "https://github.com/seongsukim-ml/density_matrix_learning_draft2",
+  "source_visibility": "private",
+  "commit": "cf2d2de365b150ef96380038f2f38b0bd8dc1627",
+  "license": "No general reuse license supplied by source; see NOTICE.md.",
+  "figures": [
+    {
+      "name": "occupation-spectrum",
+      "title": "Occupation correction",
+      "source_path": "figure/qh9_occupation_wrap.pdf",
+      "source_git_blob_sha": "9c88357d48d68cd27d0760fc6bc056df514ca62d",
+      "used_by": "figure/occupation_correction_wrap.tex",
+      "included_by": "sections/04_experiment.tex",
+      "pdf": "occupation-spectrum.pdf",
+      "pdf_sha256": "255a539dbf5390928304bf969fddd6baf5bd15f54cdee7cb9d6363dfa8aef91d",
+      "png": "occupation-spectrum.png",
+      "png_sha256": "173b068c68f402940e7db41d31d6f75af869abbdbeb03ed54305619fb1b0821c",
+      "preview_method": "Poppler pdftoppm, first page, longest edge 1800 pixels; PDF unchanged"
+    },
+    {
+      "name": "subspace-ablation",
+      "title": "OV-weight ablation",
+      "source_path": "figure/qh9_ov_ablation_mcw2.pdf",
+      "source_git_blob_sha": "d681c3490fba48d684e2bb4be10bb370592deeb8",
+      "used_by": "figure/qh9_ov_ablation.tex",
+      "included_by": "sections/04_experiment.tex",
+      "pdf": "subspace-ablation.pdf",
+      "pdf_sha256": "70b09e9e8fa2dd11e26485276cdfcef5b80c35ec9b53ee153c7c951c9d30b47f",
+      "png": "subspace-ablation.png",
+      "png_sha256": "d55700b07d2ce8ebe2f91efc8870a4638bf74953f7ba748b178a7e608b1871bc",
+      "preview_method": "Poppler pdftoppm, first page, longest edge 1800 pixels; PDF unchanged"
+    },
+    {
+      "name": "inversion-sensitivity",
+      "title": "Inversion sensitivity",
+      "source_path": "figure/cayley_inversion_wrap.pdf",
+      "source_git_blob_sha": "21638622df51dc720e21f4fd85572848993a14fa",
+      "used_by": "figure/cayley_inversion_wrap.tex",
+      "included_by": "sections/04_experiment.tex",
+      "pdf": "inversion-sensitivity.pdf",
+      "pdf_sha256": "f8ef6281e1023173c97dc61b2ace50efdbc2ef012143a48fcf7362aa7305f659",
+      "png": "inversion-sensitivity.png",
+      "png_sha256": "6716e7739fbbe298e85e3aad237b06d06cc8ab6c86e0197b1144ee993906cfe8",
+      "preview_method": "Poppler pdftoppm, first page, longest edge 1800 pixels; PDF unchanged"
+    },
+    {
+      "name": "density-errors",
+      "title": "QM40 electron densities and signed errors",
+      "source_path": "figure/qm40_prediction_density_errors.pdf",
+      "source_git_blob_sha": "116063a44a048acd6c9248985423b493d70e92a9",
+      "used_by": "sections/appendix_qm40_results.tex",
+      "included_by": "sections/99_appendix.tex",
+      "pdf": "density-errors.pdf",
+      "pdf_sha256": "99645a1c9676f576c041a724b8b9e89e13612d77397bcf172d933edb6c34835b",
+      "png": "density-errors.png",
+      "png_sha256": "2057281946e82f5e9d44d9c61443cc970ac1399e0c0d3187b221e3c046c985a8",
+      "preview_method": "Poppler pdftoppm, first page, longest edge 1800 pixels; PDF unchanged"
+    }
+  ]
+}
