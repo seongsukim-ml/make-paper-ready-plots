@@ -8,3 +8,7 @@ __pycache__/
 *.otf
 *.woff
 *.woff2
+
+.pytest_cache/
+examples/molecular-3d/*-on-white.png
+examples/molecular-3d/*-on-black.png

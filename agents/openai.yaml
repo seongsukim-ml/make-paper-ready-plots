@@ -1,4 +1,4 @@
 interface:
-  display_name: "Paper-Ready Python Plots"
-  short_description: "Create clean publication-ready Matplotlib figures"
-  default_prompt: "Use $make-paper-ready-plots to turn these results into a clean publication-ready Matplotlib figure with PDF and PNG outputs."
+  display_name: "Paper-Ready Scientific Figures"
+  short_description: "DIN-style plots and optional molecular 3D rendering"
+  default_prompt: "Use $make-paper-ready-plots to create a reproducible scientific figure from these data, with DIN styling and optional molecular 3D panels."

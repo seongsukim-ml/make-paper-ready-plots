@@ -6,8 +6,10 @@ research figures, not synthetic examples or newly evaluated results.
 
 The PDFs are unchanged originals; PNGs are page renders for the gallery.
 Click a preview to open the full PDF. These molecular visualizations are
-composition references; this plotting skill does not generate molecular
-isosurfaces from raw density grids.
+composition references. The [optional 3D workflow](../../references/rendering-3d.md)
+can create new renders from supplied grids; it does not reproduce the private
+manuscript pipeline. See [style recipes](../../references/research-styles.md)
+for occupation plots, ablations, and matched molecular comparisons.
 
 ## Figures
 

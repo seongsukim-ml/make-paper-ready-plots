@@ -1,0 +1,93 @@
+{
+  "source_file": "synthetic-fields.npz",
+  "source_sha256": "153e1d9815915d6a59ed8752b8d987ddb2e1d4333b2aea17f725d7e23eb85faf",
+  "mode": "spin",
+  "field_definition": "alpha - beta",
+  "input_length_unit": "angstrom",
+  "render_length_unit": "angstrom",
+  "density_unit": "arbitrary",
+  "camera": {
+    "position": [
+      8.212722053675172,
+      -11.240452629340599,
+      6.101049646137003
+    ],
+    "focal_point": [
+      0.55,
+      0.12,
+      0.0
+    ],
+    "view_up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parallel_scale": 1.8,
+    "projection": "parallel",
+    "aspect_ratio": 1.3846153846153846
+  },
+  "atom_count": 6,
+  "bonds": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "bonds_inferred": false,
+  "bond_rule": "supplied",
+  "smoothing_sigma_voxels": 0,
+  "opacity": 0.52,
+  "surfaces": [
+    {
+      "level": 0.012,
+      "present": true,
+      "points": 3700,
+      "cells": 7396,
+      "intersects_grid_boundary": false
+    },
+    {
+      "level": -0.012,
+      "present": true,
+      "points": 3700,
+      "cells": 7396,
+      "intersects_grid_boundary": false
+    }
+  ],
+  "field_range": [
+    -0.11049584033511595,
+    0.11049584033511595
+  ],
+  "signed_colors": {
+    "positive": "#D85140",
+    "negative": "#5384EC"
+  },
+  "transparent": true,
+  "supersample": 3,
+  "size": [
+    900,
+    650
+  ],
+  "alpha_resize": "premultiplied Lanczos; zero RGB where alpha is zero",
+  "depth_peeling_supported": true,
+  "depth_peeling_used": true,
+  "backend": "vtkXOpenGLRenderWindow",
+  "pyvista": "0.46.5",
+  "vtk": "(9, 5, 2)",
+  "output_sha256": "c62c7e2ea5d92f7f01dd87879f00f2064b2e8fe266e229f92b0fca1fbe98c86f"
+}
