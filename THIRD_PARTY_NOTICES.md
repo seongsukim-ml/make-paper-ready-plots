@@ -19,3 +19,13 @@ Matplotlib distributes DejaVu under its own font license in
 Python dependencies retain their respective licenses. The repository's MIT
 license covers its original instructions, scripts, and synthetic examples; it
 does not replace third-party dependency or font licenses.
+
+## QHFlow2 figures
+
+`examples/qhflow2/*.png` are extracted without pixel changes from stored
+notebook outputs in [seongsukim-ml/QHFlow2](https://github.com/seongsukim-ml/QHFlow2) at
+commit `67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5`.
+Copyright (c) 2026 Seongsu Kim. The source `REUSE.toml` assigns these files
+the MIT license; the license text is included in this repository's `LICENSE`.
+See `examples/qhflow2/sources.json` for per-file provenance and checksums.
+These archived figures retain their original fonts and scientific labels.

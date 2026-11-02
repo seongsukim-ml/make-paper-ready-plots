@@ -1,0 +1,88 @@
+{
+  "repository": "https://github.com/seongsukim-ml/QHFlow2",
+  "commit": "67af4bfe499459039cd2a9b4b3cd7ff3dbc04bd5",
+  "license": "MIT",
+  "copyright": "2026 Seongsu Kim",
+  "figures": [
+    {
+      "file": "parameter-hamiltonian.png",
+      "title": "Parameter count vs Hamiltonian MAE",
+      "source_path": "_asset/param_vs_performance/param_new.ipynb",
+      "source_git_blob_sha": "21c56fd716d4805e8087c782b5565749a4fe97e8",
+      "cell_index": 3,
+      "output_index": 0,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "0fe5637ed8a292ef349cf85ef01d1d7ea0cdbe15255bbb4daba07624fcbbf542"
+    },
+    {
+      "file": "parameter-orbital-energy.png",
+      "title": "Parameter count vs orbital energy MAE",
+      "source_path": "_asset/param_vs_performance/param_new.ipynb",
+      "source_git_blob_sha": "21c56fd716d4805e8087c782b5565749a4fe97e8",
+      "cell_index": 4,
+      "output_index": 0,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "9bda8d226d46b4b8c9a4e8e03ae3d1c022657c337c6be39d1b096f17f219df19"
+    },
+    {
+      "file": "md17-force.png",
+      "title": "MD17 training size vs force MAE",
+      "source_path": "_asset/md17_datascaling/data_scaling_v2.ipynb",
+      "source_git_blob_sha": "dd5e7a5745971a516b1b8348e91aaaef887cee20",
+      "cell_index": 2,
+      "output_index": 0,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "3c5a8afb6295531e28c42a21e7088c3927b5fd7cf4ada08e8de92882036ecae7"
+    },
+    {
+      "file": "md17-energy.png",
+      "title": "MD17 training size vs energy MAE",
+      "source_path": "_asset/md17_datascaling/data_scaling_v2.ipynb",
+      "source_git_blob_sha": "dd5e7a5745971a516b1b8348e91aaaef887cee20",
+      "cell_index": 2,
+      "output_index": 2,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "2983b2a73ea2328de8cc6673b6db62f195c920fff39e7eec044b177d46526a36"
+    },
+    {
+      "file": "md17-hamiltonian.png",
+      "title": "MD17 training size vs Hamiltonian MAE",
+      "source_path": "_asset/md17_datascaling/data_scaling_v2.ipynb",
+      "source_git_blob_sha": "dd5e7a5745971a516b1b8348e91aaaef887cee20",
+      "cell_index": 2,
+      "output_index": 4,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "8efa697917ec402a324c370d8f3c98d11d84d692127aa689f5b55aca48ecafb9"
+    },
+    {
+      "file": "md17-orbital-energy.png",
+      "title": "MD17 training size vs orbital energy MAE",
+      "source_path": "_asset/md17_datascaling/data_scaling_v2.ipynb",
+      "source_git_blob_sha": "dd5e7a5745971a516b1b8348e91aaaef887cee20",
+      "cell_index": 2,
+      "output_index": 6,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "38e898f21fac40d01a1648fe424ae7c7a4174168f39b0b2b2b45916a6114d15a"
+    },
+    {
+      "file": "scf-timing.png",
+      "title": "SCF iteration and timing ratios",
+      "source_path": "_asset/scf_acceleration/scf_acceleration.ipynb",
+      "source_git_blob_sha": "82386c196ab62959edc1b3c2241ce12f3f2b3fcb",
+      "cell_index": 0,
+      "output_index": 0,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "16accad28c602b5720df332ca434e0077da85bcfefccdc4ef3417f053741f877"
+    },
+    {
+      "file": "scf-timing-inset.png",
+      "title": "SCF timing ratios with inference-time insets",
+      "source_path": "_asset/scf_acceleration/scf_acceleration.ipynb",
+      "source_git_blob_sha": "82386c196ab62959edc1b3c2241ce12f3f2b3fcb",
+      "cell_index": 1,
+      "output_index": 0,
+      "method": "Decode the stored image/png notebook output without executing cells or altering pixels.",
+      "output_sha256": "cf4982ce0e0a50ff260e5f1137da0f6c1817c2fd76bd971781d530c1053fdbc3"
+    }
+  ]
+}
